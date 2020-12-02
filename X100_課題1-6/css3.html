@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="html,css,html5">
+<meta name="description" content="CSSの基本解説・チュートリアル">
+<title>CSSとは？－CSSの基本</title>
+<link href="css/html5.css" rel="stylesheet">
+<link href="css/css3.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<style>
+</style>    
+</head>
+<body>
+
+<header id="header">
+<h1>HTMLクイックリファレンス</h1>
+  <ul id="name">
+    <li>クラス名：１X</li>
+    <li>出席番号：X100</li>
+    <li>名前：駿台花子</li>
+  </ul>
+  <nav>
+  <ul>
+  <li><a href="">Home</a></li><li><a href="課題2.html">課題2</a></li><li ><a href="html5.html">HTML5</a></li><li class="current"><a href="css3.html">CSS3</a></li>
+  </ul>
+  </nav>
+  <div id="humberger">
+    <div id="open" class="btn"><a href="#g_menu">三</a></div>
+    <nav id="g_menu">
+      <div id="close" class="btn"><a href="#">×</a></div>
+      <ul>
+        <li><a href="">Home</a></li><li><a href="課題2.html">課題2</a></li><li class="current"><a href="html5.html">HTML5</a></li><li class="current"><a href="css3.html">CSS3</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- メインコンテンツ -->
+<main class="clearfix">
+<!-- 1 column -->
+<article>
+<h2>CSSとは？</h2>
+<section>
+<h3>スタイルシートとCSS</h3>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/CSS"><img src="image/css3_64.png" alt="CSS3アイコン"></a><strong>CSS</strong>（Cascading Style Sheets、カスケーディング・スタイル・シート）とは、ウェブページのスタイルを指定するための言語です。<br>
+ワープロソフトなどで作成される文書も含めて、文書のスタイルを指定する技術全般をスタイルシートといいます。HTMLやXHTMLなどで作成されるウェブページにスタイルを適用する場合には、スタイルシート言語の1つであるCSSが一般的に利用されています。</p>
+</section>
+    
+<section>
+<h3>HTMLとCSSの違い</h3>
+<P>HTMLとCSSの違いは文章の「構造」を指定するのか「装飾」を指定するのかといったことです。
+</P>
+<P>
+HTMLはタグで文章を囲うことで意味付けをして、文章の構造を作ります。
+それに対してCSSは「どんな装飾をするのか」「その装飾の色やサイズは何か」を指定する言語です。
+つまり、CSSは構造とデザインの役割を分けるための言語と言えます。</P>
+</section>
+</article>
+<aside>
+<section>
+<h3>CSSの変遷</h3>
+<table>
+<tr><td>CSS１</td><td>一番初期のバージョンであり、フォント・色・背景・マージン・パディング・ボーダーなどが設定できる。</td></tr>
+<tr><td>CSS2</td><td>CSS2では、パソコン以外のモニタでも利用できる規格であり、動的な内容の生成・配置・表のレイアウト・カウンタなどが設定できる。</td></tr>
+<tr><td>CSS2.1</td><td>CSS2のエラー修正や一部プロパティの削除をはじめとして、音声スタイルなどのCSS2には存在していた機能の一部が廃止されている。</td></tr>
+<tr><td>CSS3</td><td>角丸・画像ボーダー・ドロップシャドウ・グラデーション・透明度・アニメーションなどの機能が追加されている。「セレクタ」、「フォント」、「テキスト」などの、さまざまな機能がモジュール化されている。</td></tr>
+</table>
+</section>
+</aside>
+<!- - topへ - ->
+    <p class="pagetop">
+      <a href="#header" title="ページトップへ戻る">
+      <img src="image/pagetop.png" alt="▲PAGE TOP">
+      </a>
+    </p>
+</main>
+
+<!- - フッタ - ->
+<footer>
+<p><small>&copy;駿台電子情報＆ビジネス専門学校 ネットワーク</small></p>
+<address>xxxxxx@gs.sundaidenshi.ac.jp</address>
+</footer>
+</body>
+</html>
+

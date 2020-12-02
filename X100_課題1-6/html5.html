@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="html5,sample,サンプル,マークアップ">
+<meta name="description" content="このページはhtml5のサンプルページです。">
+<title>HTML5によるマークアップのサンプル</title>
+<link href="css/html5.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!- - ヘッダ - ->
+<header id="header">
+<h1>HTMLクイックリファレンス</h1>
+  <ul id="name">
+    <li>クラス名：１X</li>
+    <li>出席番号：X100</li>
+    <li>名前：駿台花子</li>
+  </ul>
+  <nav>
+  <ul>
+  <li><a href="">Home</a></li><li><a href="課題2.html">課題2</a></li><li class="current"><a href="html5.html">HTML5</a></li><li><a href="css3.html">CSS3</a></li>
+  </ul>
+  </nav>
+  <div id="humberger">
+    <div id="open" class="btn"><a href="#g_menu">三</a></div>
+    <nav id="g_menu">
+      <div id="close" class="btn"><a href="#">×</a></div>
+      <ul>
+        <li><a href="">Home</a></li><li><a href="課題2.html">課題2</a></li><li class="current"><a href="html5.html">HTML5</a></li><li><a href="css3.html">CSS3</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!- - メインコンテンツ - ->
+<main class="clearfix">
+<!-- 2 column -->
+<article>
+<h2>HTML5とは？</h2>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/Guide/HTML/HTML5"><img src="image/HTML5_Badge_64.png" alt="HTML5アイコン"></a><em>HTML5</em>とは、HTMLのバージョン5、改訂第5版です。<b>section</b>,<b>article</b>文書構造表現、<b>audio</b>, <b>video</b> 等のマルチメディア機能、<b>canvas</b> による
+グラフィック、<b>input</b> における date, time, tel などの入力方式などが強化されました。…</p>
+<section>
+<h3>html5の文書構造</h3>
+<p><code>html</code>要素の中に、<code>head</code>要素や<code>body</code>要素を使用します。</p>
+<pre>
+<code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;文書のタイトル&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;pre要素 &amp; code要素の使用例&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+</pre>
+</section>
+</article>
+<aside>
+<h2>HTML5のスケジュール</h2>
+<p><s>HTML5は2014正式に勧告予定です。</s></p>
+<p>HTML5.2が2017年正式に勧告されました。</p>
+</aside>
+<!- - topへ - ->
+    <p class="pagetop">
+      <a href="#header" title="ページトップへ戻る">
+      <img src="image/pagetop.png" alt="▲PAGE TOP">
+      </a>
+    </p>
+</main>
+
+<!- - フッタ - ->
+<footer>
+<p><small>&copy;駿台電子情報＆ビジネス専門学校 ネットワーク</small></p>
+<address>xxxxxx@gs.sundaidenshi.ac.jp</address>
+</footer>
+
+</body>
+</html>

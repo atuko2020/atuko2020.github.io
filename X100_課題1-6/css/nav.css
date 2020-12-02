@@ -1,0 +1,47 @@
+@charset "utf-8";
+@media screen and (min-width:769px) {
+header {
+	position: relative;/* 子要素の基準  */
+	height: 324px;
+}
+header nav{
+    border-bottom: 1px solid #ccc;
+    position: absolute;/* 下に固定  */
+    bottom: 0px;
+    left: 50%;/* 左を基準に親要素の中央に配置 */
+    transform: translateX(-50%);/* navの横幅の50％左に移動 */
+        width:100%;
+}
+header nav ul{
+    padding: 0;
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
+header nav ul li:first-child{
+    border-left: 1px solid #ccc;
+}
+header nav ul li a{
+    box-sizing: border-box;
+    display: block;
+    min-width: 100px;
+    padding: 20px 0px 10px;
+    text-decoration: none;
+    color: #708090;
+    margin:0;
+    transition: background-color 2s;
+}
+header nav ul li a:hover{
+    margin:0;
+    background-color:#ffefd5;
+    padding: 20px 0px 10px;
+}
+header nav ul li.current a{
+    margin:0;
+    font-weight: bold;
+    padding: 20px 0px 5px;
+    border-bottom: 5px solid #ccc;
+}
+}

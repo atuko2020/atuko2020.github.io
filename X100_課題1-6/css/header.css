@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*==================
+header
+====================*/
+#name{
+    margin: 2em auto;
+    padding: 1em 1em 0;
+    list-style: none;
+    width:20%;
+    min-width: 180px;
+    text-align: left;
+}
+
+#name li{
+    border-bottom: 4px dotted #6baeb3;
+    margin-bottom: 1em;
+}
+
+#name li::before{
+    content:url(../image/check.png);
+    margin: 0 1em;
+    vertical-align: middle;
+}
