@@ -1,0 +1,52 @@
+header {
+    height:200px;
+    background: brown;
+    position: relative;
+}
+nav {
+    position:absolute;
+    bottom: 0;  
+	background-color: #222222;
+	color: white;
+    width: 100%;
+}
+nav ul {
+	display: flex;
+	flex-flow: row;
+	margin: 0;
+	padding: 6px;
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	border-radius: 4px;
+	padding: 12px 24px;
+	color: white;
+	text-decoration: none;
+}
+nav li a:hover {
+	background-color: #8cae47;
+}
+main {
+    padding-top:20px;
+}
+main>section {
+    display: flex;
+    flex-direction: column;
+}
+main>section>section{
+    flex: auto;  
+}
+section section img {
+    width:40%;
+    margin:10px;
+}
+section {
+    overflow: hidden;
+}
+section:nth-of-type(odd) img{
+    float:left;
+}
+section:nth-of-type(even) img{
+    float:right;
+}
