@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*全体の設定*/
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 40px auto 0;
+    border:1px dashed #ccc;
+    text-align: center;
+}
+h2{margin-bottom: 1em;}
+
+/*dlタグ内の設定*/
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-item{
+    color: #fff;
+    padding: 1em;
+}
+.flex-item:not(:nth-of-type(2)){
+    background: #0fb;
+    /*flex-basis: calc(90% / 4);*/
+    flex: 1;
+}
+.flex-item:nth-of-type(2) {
+    background: #09b;
+    /*flex-basis: calc(90% / 2);*/
+    flex: 2;
+}
+.flex-item dt{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
