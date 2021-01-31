@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>x100 HTML_課題2</title>
+<link href="css/html5.css" rel="stylesheet">
+<link href="css/課題2.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body id="header">
+<header>
+  <h1>HTML_課題_2</h1>
+  <ul id="name">
+    <li>クラス名：１X</li>
+    <li>出席番号：X100</li>
+    <li>名前：駿台花子</li>
+  </ul>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li><li class="current"><a href="課題2.html">課題2</a></li><li><a href="./X100_課題3/index.html">課題3</a></li><li><a href="html5.html">HTML5</a></li><li><a href="css3.html">CSS3</a></li>
+    </ul>
+  </nav>
+  <div id="humberger">
+    <div id="open" class="btn"><a href="#g_menu">三</a></div>
+    <nav id="g_menu">
+      <div id="close" class="btn"><a href="#">×</a></div>
+      <ul>
+        <li><a href="../index.html">Home</a></li><li class="current"><a href="課題2.html">課題2</a></li><li><a href="./X100_課題3/index.html">課題3</a></li><li><a href="html5.html">HTML5</a></li><li><a href="css3.html">CSS3</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!- - メインコンテンツ - ->
+<main class="clearfix">
+
+<!-- 2 column -->
+<article>
+<section id="title1">
+  <h2>１．Webページ（サイト）を構成する要素（素材）</h2>
+  <dl>
+    <dt>HTML<img src="image/HTML5_Badge_64.png"></dt>
+    <dd>文書構造</dd>
+    <dt>CSS<img src="https://www.w3.org/Icons/w3c_home.gif"></dt>
+    <dd>見た目や配置</dd>
+    <dt>コンテンツ</dt>
+    <dd>テキスト、画像、音声、動画</dd>
+  </dl>
+</section>
+<section id="title2">
+  <h2>２．Webページ（サイト）で使用される画像のファイル形式</h2>
+  <table>
+    <tr><th></th><th>圧縮方式</th><th>色数</th><th>透明</th><th>適した用途</th><th>欠点</th></tr>
+    <tr><th>JPEG</th><td>非可逆圧縮</td><td>約1677万色</td><td>扱えない</td><td>写真など色数豊富なもの</td><td>元の画像に戻せない　透過を扱えない</td></tr>
+    <tr><th>PNG</th><td>可逆圧縮</td><td>約1677万色</td><td>扱える</td><td>透過の必要なもの</td><td>CMYK（印刷用の色の設定）に対応していない</td></tr>
+    <tr><th>GIF</th><td>可逆圧縮</td><td>256色</td><td>背景透過</td><td>色数の少ないもの　イラスト</td><td>扱える色数が限られる</td></tr>
+  </table>
+</section>
+<section id="title3">
+  <h2>３．フレームワークとは</h2>
+    <p>フレームワークとは、汎用的で再利用可能なクラスやライブラリ、モジュール、<b>API</b><a class="ref" href="#API">※１</a>などをパッケージにして、ソフトウェアの主要部分の雛形（テンプレート）としてそのまま利用できるものを指す。</p>
+    <p>代表的なフレームワークとして、Googleが開発した<a href="https://qiita.com/NS19960207/items/961ddfa32bd1faa43b80">「Angular」</a>やJavaScriptライブラリのデファクトスタンダードといえる<a href="https://www.sejuku.net/blog/6436">「jQuery」</a>などが上げられる。</p>
+    <p>jQueryを利用するには以下の様にjQueryを<b>CDN</b><a class="ref" href="#CDN">※２</a>で読み込む方法が一般的です。</p>
+    <code>
+    &lt;script src="https://code.jquery.com/jquery-3.3.1.js"&gt;&lt;/script&gt;
+    </code>
+    <p>参考：<cite><a href="https://developer.mozilla.org/ja/docs/Glossary/jQuery">jQuery</a></cite></p>
+</section>
+<section id="title4">
+    <h2>４．レスポンシブWebデザインとは</h2>
+    <p>レスポンシブWebデザインとは、閲覧する端末に応じて、Webページのレイアウトを変更したり、コンテンツの表示・非表示を切り替えたりなどの適応を行う技術。一つのHTMLファイルをCSSファイルで制御することで、端末の画面サイズに合わせたWebデザインで表示を行う。</p>
+    <section>
+    <h3>ビューポート</h3>
+    <p>ビューポートは、Webページを表示する領域のこと。モバイル端末の画面はPCに比べて小さいのが一般的で、その小さな画面でPC向けに作られたWebページを表示するとWebの一部しか表示されず、隠れた部分はスクロールなどして閲覧しなければならない。
+    そのため、モバイル端末のWebブラウザではビューポートを実際の画面サイズよりも大きく解釈するように設定され、画面に収まるように全体を縮小して表示するようになっている。しかし、そのことでモバイル端末向けにデザインされたWebページも縮小して表示してしまうことになる。
+    そこで、HTMLの<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta">meta要素</a>を使って、モバイル端末のWebブラウザでもWebページが等倍で表示されるように指定することができる。</p>
+    </section>
+    <section>
+    <h3>ブレイクポイント</h3>
+    <p>ブレイクポイントは、レスポンシブWebデザインでレイアウトを切り替える際の画面幅サイズを指す。スマートフォンやタブレットの画面に合わせて、最適なブレイクポイントを指定することができる。</p>
+    </section>
+    <p>参考：<cite>エムディエヌコーポレーション「HTML＋CSS標準入門」2020</cite></p>
+  </section>
+<section id="title5">
+  <h2>５．Webページの代表的なレイアウトパターン</h2>
+    <section>
+    <h3>レイアウトパターン</h3>
+    <table>
+    <tr><th>シングルカラムレイアウト</th><td>ヘッダー・ナビゲーション・コンテンツ・フッターなどの領域を縦に並べる配置。レスポンシブwebデザインが全盛の現在において、PC向け・モバイル向けへの対応がしやすく、スクロールしていくことで情報をたどっていける見やすさが特徴である。</td></tr>
+    <tr><th>マルチカラムレイアウト</th><td>多くの情報を整理した状態で配置でき、コーポレートサイトをはじめ、多くのwebサイトで採用されているレイアウトパターン。コンテンツ部分をカラム(段組)することで、メインコンテンツの領域とサブコンテンツやバナーなどを配置するサイドバーの領域を左右に分ける２カラム、メインコンテンツの両脇にサイドバーの領域を置く３カラムなどのレイアウトが存在する。</td></tr>
+    <tr><th>グリッドレイアウト</th><td>コンテンツをタイル状に並べるレイアウトで、「カードレイアウト」とも呼ばれてる。コンパクトにまとめたコンテンツを一瞥出来る形で配置することができるため、ギャラリーサイトやECサイト、SNSなどで使われている。</td></tr>
+    <tr><th>フルスクリーンレイアウト</th><td>Webブラウザの画面いっぱいに写真や動画の拝啓を配置してコンテンツを見せるレイアウトパターン。アーティストのプロフィールサイトや特定の商品やサービスの紹介サイトなどで採用されることが多い。</td></tr>
+    </table>
+    </section>
+    <section>
+    <h3>表現手法</h3>
+    <table>
+    <tr><th>テーブルレイアウト</th><td>表組みを行うための要素であるHTMLのtable要素を使い、境界線を非表示にした目に見えないテーブル(テーブル)を作り、その中にコンテンツを配置する手法。</td></tr>
+    <tr><th>CSS_Flexbox</th><td>CSSのdisplayプロパティの値に「<em>flex</em>」を指定することで表現できるレイアウトである。コンテンツのボックスを用意に横並びにしたり、左寄せ・中央寄せ・右寄せにしたりといったレイアウトを簡潔な記述で実現できる手法であり、現在のWebページのレイアウト手法の主流である。</td></tr>
+    <tr><th>CSS_Glidレイアウト</th><td>Flexboxよりもさらに自由度の高いコンテンツの配置を行うことのできる手法である。CSSのdisplayプロパティの値に「Grid」を指定することで表現し、縦と横に区切った格子状のコンテンツ配置を指定できる。</td></tr>
+    </table>
+    </section>
+</section>
+<section  id="title6">
+    <h2>６．コロナ禍でのインターネットの利用</h2>
+    <p>コロナ感染拡大防止策として国民全体が不要不急の外出を控える中、テレビ・Web会議ツール<b>Zoom</b><a class="ref" href="#ZOOM">※3</a>が様々なシーンで多く使われている。</p>
+</section>
+</article>
+<!- - 参照 - ->
+<aside class="clearfix" id="ref">
+<h2>Reference</h2>
+    <p id="API">
+       ※１ <dfn>API</dfn>とは、アプリケーション・プログラミング・インターフェイスの略で、「アプリケーションをプログラミングするためのインターフェース」という意味である。
+    </p>
+    <p id="CDN">
+        ※２ <dfn>CDN</dfn>はContent Delivery Networkの略で、簡単に言うとインターネット経由でファイルを配信する仕組みのことです。特にjQueryなどで利用する場合は、ソースファイルをネット経由で使えるためファイルをダウンロードする必要がありません。
+    </p>
+    <p id="ZOOM">
+       ※３ <dfn>Zoom</dfn>とは、いつでも、どこでも、どんな端末からでも Web会議を実現するクラウドサービスで、簡単に言えば、複数人での同時参加が可能な「ビデオ・Web会議アプリケーション」である。<cite><a href="https://zoom.nissho-ele.co.jp/blog/practice/zoom-meeting.html">３分でわかるZoomとは？知らないと損するWeb会議ツール</a></cite>
+    </p>
+</aside>
+    <p class="pagetop">
+      <a href="#header" title="ページトップへ戻る">
+      <img src="image/pagetop.png" alt="▲PAGE TOP">
+      </a>
+    </p>
+</main>
+<!- - フッタ - ->
+<footer>
+<p><small>&copy;駿台電子情報＆ビジネス専門学校 ネットワーク</small></p>
+<address>xxxxxx@gs.sundaidenshi.ac.jp</address>
+</footer>
+</body>
+</html>

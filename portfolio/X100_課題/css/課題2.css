@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*==================
+1 column
+====================*/
+article {
+    width: 100%;
+}
+aside {
+    width: 100%;
+    border-width: 0px;
+    padding:10px 15px;
+    font-size: 0.8em;
+}
+
+/*==================
+aside
+====================*/
+aside p {
+	width: 30%;
+	float: left;
+	padding-right:10px;
+}
+/*==================
+    artice table
+====================*/
+article table {
+    border-collapse: collapse;
+}
+article th, article td {
+    border:solid #ffcc99 1px;
+    padding:10px;
+    font-size:0.8em;
+}
+
+article th {
+	/*width: 30%;*/
+	background: #ffcc99;
+	border-bottom: solid white;
+	color: white;
+}
+
+article section:not(:nth-child(2)) th {
+	width:30%;
+}

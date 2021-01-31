@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*==================
+    table
+====================*/
+table {
+        border-collapse: collapse;
+}
+th, td {
+    border:solid #ffcc99 1px;
+    padding:10px;
+    font-size:0.8em;
+}
+tr:nth-child(odd) { /*  奇数行にのみ背景色を設定します  */
+    background: #ddd;
+}

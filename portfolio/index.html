@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="SUNDAI TARO">
+
+<title>SUNDAI TARO</title>
+<link href="css/sample.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link href="css/portfolio.css" rel="stylesheet">
+<style>
+
+form {  margin: 0 1em 20px 2em; }
+form input, form textarea {
+     border: none;
+     /*border-bottom:1px solid #eee;*/
+      border-bottom: solid 1px #AAA;
+}
+#textarea{
+     position:relative;
+     margin-bottom: 3em;
+}
+form textarea {
+     position: absolute;
+     top: 20px;
+     left: 6.5em;
+     border: solid 1px black;
+}
+form div {
+    line-height:2em;
+    padding: 10px;
+}
+form button {
+    border: solid #aaa;
+    border-radius: 5px;
+    width: 5em;
+    display: block;
+    margin: auto;
+    height: 2em;
+}
+
+</style>
+</head>
+<body>
+
+<div id="container">
+<h1>Taro Sundai</h1>
+<nav>
+  <ul>
+    <li>
+        <a href="#page-top"></a>
+    </li>
+    <li>
+        <a href="#portfolio">Portfolio</a>
+    </li>
+    <li>
+        <a href="#about">About</a>
+    </li>
+    <li>
+        <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+<header id="gallery">
+</header>
+<div id="wrapper">
+<main id="main">
+<!-- Portfolio Grid Section -->
+<section>
+<h2>Portfolio</h2>
+<div id="portfolio">
+<div>
+	<p>Java</p>
+</div>
+<div>
+	<p>Python</p>
+</div>
+<div>
+	<p>C</p>
+</div>
+<div>
+    <p><a href="X100_課題/課題2.html">HTML/CSS</a></p>
+</div>
+<div>
+	<p>JavaScript</p>
+</div>
+<div>
+	<p>Network</p>
+</div>
+<div>
+	<p>.....</p>
+</div>
+<div>
+	<p>.....</p>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about">
+<h2>About</h2>
+<p>自分に興味をもってもらえるように、自己分析をしてみましょう。</p>
+<p>できるだけエピソードなど具体的な事例を挙げてみましょう。</p>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact Me</h2>
+<div class="row">
+<form name="sentMessage" id="contactForm" novalidate>
+<div>
+<label for="name">Name</label>
+<input type="text" placeholder="Name." id="name" required data-validation-required-message="Please enter your name.">
+</div>
+<div>
+<label for="email">Email Address</label>
+<input type="email" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+</div>
+<div>
+<label for="phone">Phone Number</label>
+<input type="tel" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+</div>
+<div id="textarea">
+<label for="message">Message</label>
+<textarea rows="5" cols="50" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+</div>
+<button type="submit">Send</button>
+</form>
+</div>
+</section>
+</main>
+<!- - topへ - ->
+<p class="pagetop">
+<a href="#" title="ページトップへ戻る">
+<img src="images/pagetop.png" alt="▲PAGE TOP">
+</a>
+</p>
+</div>
+<footer>
+<p><small>&copy;SundaiDenshi&amp;Business Technical College, All Rights Reserved.</small></p>
+</footer><!-- /footer -->
+</div><!-- /container -->
+<!-- Script Section -->   
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.cross-slide.js"></script>
+<script src="js/sample.js"></script>
+
+</body>
+</html>

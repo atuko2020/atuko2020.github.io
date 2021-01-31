@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*========================
+         Mobile
+==========================*/
+@media screen and (max-width:768px) {
+    header {
+        background: brown;
+        position: relative;
+    }
+    nav ul {
+	   flex-flow: column;
+    }
+    nav ul li {
+        font-size: 0.8em;
+        margin: 0;
+        padding: 0;
+        line-height: 1em;
+    }
+}/******** Mobile END ***********/

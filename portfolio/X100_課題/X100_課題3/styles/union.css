@@ -1,0 +1,86 @@
+﻿@charset "utf-8";
+
+/* general */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+:root {
+	color:rgb(64,64,64);
+	font-family:Corbel, "BIZ UDGothic", Meiryo, sans-serif;
+	font-size:16px;
+	line-height:1em;
+}
+h1 {
+	font-size:1.8em;
+	line-height:1.2em;
+    padding:1em;
+}
+h2 {
+	line-height:1.2em;
+	letter-spacing:-0.05em;
+	text-align:center;
+}
+h3 {
+	margin:1em;
+	padding-bottom:4px;
+	color:hsl(20,80%,20%);
+	font-size:1.6em;
+	line-height:1.6em;
+	letter-spacing:-0.05em;
+}
+p {
+	margin-top:0.5em;
+	margin-bottom:1em;
+	font-size:1em;
+	line-height:1.8em;
+}
+ul {
+	margin-left:2em;
+	margin-top:0.5em;
+	margin-bottom:1em;
+	font-size:1em;
+	line-height:1.3em;
+}
+/*==================
+TOPへのリンク
+====================*/
+p.pagetop {
+    position: fixed;/* 右下に固定  */
+    bottom: 16px;
+    right: 16px;
+    opacity: 0.55 ;
+}
+p.pagetop a {
+    display: block;
+    text-decoration: none;
+} 
+p.pagetop:hover {
+    opacity: 0.85 ;
+}
+
+section {
+	text-align:justify;
+	text-justify:distribute;
+}
+
+nav ul, footer ul {
+	margin-left:0px;
+	list-style:none;
+}
+small {
+	font-size:0.8em;
+}
+a {
+	color:hsl(20,80%,20%);
+	text-decoration:none;
+}
+a:hover, a:focus {
+	color:hsl(20,80%,40%);
+	text-decoration:underline;
+}
+/*   本文との位置調整  */
+img + br {
+	display:none;
+}

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/* リセット ================= */
+body, div, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:link, a:visited, ahover, a:active {
+  color: #FFF;
+}
+
+/* 
+全体 ================= */
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #FFF;
+  font-size: 16px;
+  font-family:
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    sans-serif;
+  line-height: 1.6;
+}
+#container {
+  background: #FFF;
+  width: 100%;
+  max-width:840px;
+  /*border: solid 1px black;*/
+  /*margin: 0 auto 100px auto;*/
+  margin: 0 auto;
+  border-left: solid 1px #AAA;
+  border-right: solid 1px #AAA;
+}
+#wrapper	{
+  overflow: hidden;
+}
+
+/* 
+ヘッダー ================= */
+header {
+  width: 100%;
+  /*width: 840px;*/
+  height: 360px;
+  /*padding: 20px;*/
+  background-image: url(../images/slide1.jpg);
+  border-bottom: solid 1px #AAA;
+  position:relative;
+}
+h1 {
+  color:cadetblue;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+}
+/* 
+コンテンツ ================= */
+main {
+  /*margin: 30px 0;*/
+}
+section {
+  margin-bottom: 50px;
+}
+section h2 {
+  color: #FFF;
+  font-size: 1.2em;
+  margin: 0 0 15px;
+  padding: 5px 0 4px 1.1em;
+  background-color: #669;
+  border-left: 6px solid #C69;
+}
+section p {
+  color: #333;
+  font-size: 0.875em;
+  margin: 0 1em 20px 2em;
+}
+/* 
+link ================= */
+li {
+  color: #000;
+  font-size: 0.875em;
+  line-height: 1.8;
+}
+li a {
+  padding-left: 28px;
+  display: block;
+}
+li a:link, li a:visited {
+  color: #000;
+  display: block;
+  padding-bottom: 7px;
+}
+li a:hover, li a:active {
+  padding-bottom: 7px;
+  color: #FF8800;
+  background: url(../images/arrow.jpg) no-repeat 16px 6px;
+}
+/* 
+Contact Me ================= */
+form {  margin: 0 1em 20px 2em; }
+form input, form textarea {
+     border: none;
+     /*border-bottom:1px solid #eee;*/
+      border-bottom: solid 1px #AAA;
+}
+#textarea{
+     position:relative;
+     margin-bottom: 3em;
+}
+form textarea {
+     position: absolute;
+     top: 20px;
+     left: 6.5em;
+     border: solid 1px black;
+}
+form div {
+    line-height:2em;
+    padding: 10px;
+}
+form button {
+    border: solid #aaa;
+    border-radius: 5px;
+    width: 5em;
+    display: block;
+    margin: auto;
+    height: 2em;
+}
+
+/* 
+フッター ================= */
+footer {
+  clear: both;
+  border-top: solid 1px #AAA;
+  border-bottom: solid 1px #AAA;
+  padding: 10px 0 12px 0;
+  text-align: center;
+}
+footer p small {
+  color: #000;
+  font-size: 0.8em;
+}
+/*==================
+TOPへのリンク
+====================*/
+p.pagetop {
+    position: fixed;/* 右下に固定  */
+    bottom: 16px;
+    right: 16px;
+    opacity: 0.55 ;
+}
+p.pagetop a {
+    display: block;
+    text-decoration: none;
+} 
+p.pagetop:hover {
+    opacity: 0.85 ;
+}

@@ -1,0 +1,82 @@
+/* 絶対値指定の基準値 */
+main {
+    position:relative;
+}
+/* body */
+body {
+    width: 90%;
+    margin: auto;
+}
+/* ページヘッタ */
+header {
+    height:200px;
+    background: brown;
+    position: relative;
+}
+/* グローバルナビゲーション */
+nav {
+    position:absolute;
+    bottom: 0;  
+	background-color: #222222;
+	color: white;
+    width: 100%;
+}
+nav ul {
+	display: flex;
+	/*flex-flow: row;*/
+	margin: 0;
+	padding: 6px;
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	border-radius: 4px;
+	padding: 12px 24px;
+	color: white;
+	text-decoration: none;
+}
+nav li a:hover {
+	background-color: #8cae47;
+}
+/* メイン */
+main {
+    padding-top:20px;
+}
+section section img {
+    width:40%;
+    margin:10px;
+}
+section {
+    overflow: hidden;
+}
+/* 画像左寄せ */
+section:nth-of-type(odd) img{
+    float:left;
+}
+/* 画像右寄せ */
+section:nth-of-type(even) img{
+    float:right;
+}
+/* ページフッタ */
+body > footer {
+	font-size:0.9em;
+	text-align:center;
+}
+
+body > footer ul {
+	margin-top:0px;
+    padding:1rem 0px 0.5rem;
+	background-color:hsl(40,40%,90%);
+}
+body > footer > ul > li:last-of-type {
+	margin-top:1rem;
+}
+/* 横並び */
+body > footer li {
+	display:inline;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+body > footer li:not(:first-child) {
+	border-left:1px solid hsl(20,80%,20%);
+}

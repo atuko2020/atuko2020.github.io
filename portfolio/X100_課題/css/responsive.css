@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*========================
+         Mobile
+==========================*/
+@media screen and (max-width:768px) {
+
+/*========================
+    Mobile humberger
+==========================*/
+  header>nav{
+     display:none;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+  #humberger {
+    margin: 0 0 0 auto;
+    width: 150px;
+    height: 100%;
+    padding: 10px;
+    display: inline-box;
+  }
+  .btn {
+    text-align: right;
+  }
+  .btn a {
+    display: inline-block;
+    text-align: center;
+  }
+  #open a {
+    background: #eee;
+    width: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 1s;
+  }
+  #close a {
+    color: #fff;
+    background: #aaa;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+  }
+/*=================================================
+   #g_menuがリンク先のtargetになった場合のデザイン
+===================================================*/
+  #g_menu:not(:target) {
+    right: -100%;        
+  }
+  #g_menu:target {
+    display:block;
+    right: 0;
+  }
+  #g_menu li {
+    list-style: none;
+  }
+  #g_menu a {
+    color: #000;
+  }
+  #g_menu {
+    height: 100%;
+    width: 150px;
+    padding: 10px;
+    background: rgba(240, 220, 212, 0.6);
+    transition: right 1s; /*rightデザインを1秒かけて表示*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+/*=================================================
+   メニューデザイン 微調整
+===================================================*/
+  #humberger nav ul li a {
+    display: block;
+    padding: 10px 5px 10px;
+    color: #7b645d;
+    font-size: 14px;
+  }
+}/******** Mobile END ***********/
+/*=================================================
+             PC 769px以上
+===================================================*/
+/* humbergerを非表示 */
+@media screen and (min-width:769px) {
+  #open, #close,#g_menu{
+    display: none;
+  }
+}
+/*=================================================
+             PC 973px以下
+===================================================*/
+/* フロートの解除 */
+@media screen and (max-width:973px) {
+/*==================
+    1 column
+====================*/
+  article {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    border-width: 0px;
+    padding:10px 15px;
+    font-size: 0.8em;
+  }
+}/******** PC END ***********/
