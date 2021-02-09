@@ -1,0 +1,44 @@
+SUNDAI TARO Feed created by FiveFilters.org https://atuko2020.github.io/portfolio/ Feed Creator https://atuko2020.github.io/portfolio/#page-top Portfolio https://atuko2020.github.io/portfolio/#portfolio About https://atuko2020.github.io/portfolio/#about Contact https://atuko2020.github.io/portfolio/#contact HTML/CSS https://atuko2020.github.io/portfolio/X100_%E8%AA%B2%E9%A1%8C/%E8%AA%B2%E9%A1%8C2.html
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>SUNDAI TARO</title>
+<description>Feed created by FiveFilters.org</description>
+<link>https://atuko2020.github.io/portfolio/</link>
+<generator>Feed Creator</generator>
+<atom:link rel="self" href="http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fatuko2020.github.io%2Fportfolio%2F&max=5&order=document"/>
+<atom:link rel="related" title="Edit feed with Feed Creator" href="http://createfeed.fivefilters.org/index.php?url=https%3A%2F%2Fatuko2020.github.io%2Fportfolio%2F&max=5&order=document"/>
+<item>
+<title/>
+<link>https://atuko2020.github.io/portfolio/#page-top</link>
+<description/>
+...
+</item>
+<item>
+<title>Portfolio</title>
+<link>https://atuko2020.github.io/portfolio/#portfolio</link>
+<description/>
+...
+</item>
+<item>
+<title>About</title>
+<link>https://atuko2020.github.io/portfolio/#about</link>
+<description/>
+...
+</item>
+<item>
+<title>Contact</title>
+<link>https://atuko2020.github.io/portfolio/#contact</link>
+<description/>
+...
+</item>
+<item>
+<title>HTML/CSS</title>
+<link>https://atuko2020.github.io/portfolio/X100_%E8%AA%B2%E9%A1%8C/%E8%AA%B2%E9%A1%8C2.html</link>
+<description/>
+...
+</item>
+...
+</channel>
+...
+</rss>
